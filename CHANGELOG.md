@@ -7,6 +7,7 @@
 - Expose `encodeURIComponent`, `decodeURIComponent`, `btoa`, `atob`, `isFinite`, `decodeURI` and `encodeURI` in the global scope.
 - Refactor native functions into an object, making it easier to add new functions.
 - Expose `Ethers.setChain({chainId})` to be able to switch between EVM networks.
+- Add a `networkId` prop to the `Widget` component config to allow using a `near` object outside the singleton state to allow testing Mainnet components on a Testnet initialized VM or vice versa
 
 ## 2.2.3
 
