@@ -1,5 +1,6 @@
 import gfm from "remark-gfm";
 import ReactMarkdown from "react-markdown";
+import gemoji from 'remark-gemoji';
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
 import React from "react";
