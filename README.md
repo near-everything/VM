@@ -24,3 +24,7 @@ You can play with the VM at one of the gateways:
 - https://dev.near.social/ (`dev` VM branch)
 - https://near.org/
 - https://jutsu.ai/
+
+
+
+components/

@@ -94,7 +94,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "build": "rm -r dist && npx rollup -c --bundleConfigAsCjs"
+    "build": "npx rollup -c --bundleConfigAsCjs"
   },
   "eslintConfig": {
     "extends": [

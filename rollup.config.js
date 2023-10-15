@@ -16,7 +16,7 @@ export default {
   input: "src/index.js", // Change to your entry file
   output: {
     file: "dist/index.umd.js",
-    format: "umd", // Output format for browsers
+    format: "cjs", // Output format for browsers
     name: "near-social-vm", // Your library name
     extend: true,
   },
@@ -29,11 +29,11 @@ export default {
     commonjs({
       ignoreGlobal: true,
       include: /\/node_modules\//,
-      // namedExports: {
-      //   react: Object.keys(react),
-      //   "react-dom": Object.keys(reactDom),
-      //   "react-is": Object.keys(reactIs),
-      // },
+      namedExports: {
+        "react": Object.keys(react),
+        "react-dom": Object.keys(reactDom),
+        "react-is": Object.keys(reactIs),
+      },
     }), // Convert CommonJS modules to ES modules if needed
     json(),
     sucrase({
